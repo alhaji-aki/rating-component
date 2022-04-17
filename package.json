@@ -1,0 +1,29 @@
+{
+  "name": "rating-component",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/main.css",
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alhaji-aki/rating-component.git"
+  },
+  "keywords": [
+    "frontend",
+    "tailwindcss",
+    "frontend mentor",
+    "rating component"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alhaji-aki/rating-component/issues"
+  },
+  "homepage": "https://github.com/alhaji-aki/rating-component#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}
