@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-input:checked ~ span {
-  @apply bg-mediumGrey;
-}
-input:checked + div svg {
-  @apply block;
+input:checked + label {
+  @apply bg-mediumGrey text-white;
 }

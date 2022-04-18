@@ -12,48 +12,65 @@
     </head>
 
     <body class="bg-veryDarkBlue">
-        <div class="rounded-3xl w-1/3 h-auto p-8 bg-gradient-to-bl from-gray-700 via-gray-800 to-gray-900">
-            <form class="flex flex-col">
-                <div class="rounded-full w-12 h-12 text-center bg-gray-700 p-4 mb-8">
-                    <img src="./images/icon-star.svg" alt="" class="">
+            <div class="rounded-3xl w-96 h-auto p-8 bg-gradient-to-bl from-gray-700 via-gray-800 to-gray-900">
+                <div id="rating-component">
+                    <form id="rating-form" class="flex flex-col">
+                        <div class="flex justify-center items-center rounded-full w-12 h-12 bg-gray-700 p-4 mb-8">
+                            <img src="./images/icon-star.svg" alt="" class="">
+                        </div>
+                        <h3 class="font-bold text-white text-3xl mb-6">How did we do?</h3>
+                        <p class="font-normal text-mediumGrey text-l mb-6">
+                            Please let us know how we did with your support request. All feedback is appreciated to help
+                            us
+                            improve our offering!
+                        </p>
+                        <div class="flex items-center justify-center mb-6 space-x-4">
+                            <div
+                                class="flex justify-center items-center rounded-full w-12 h-12 bg-gray-700 text-mediumGrey font-medium">
+                                <input class="absolute opacity-0 cursor-pointer h-0 w-0" type="radio" name="rate"
+                                    id="rate-1" value="1">
+                                <label
+                                    class="flex justify-center items-center w-full h-full rounded-full hover:text-white hover:bg-orange focus:text-white focus-within:bg-orange"
+                                    for="rate-1">1</label>
+                            </div>
+                            <div
+                                class="flex justify-center items-center rounded-full w-12 h-12 bg-gray-700 text-mediumGrey font-medium">
+                                <input class="absolute opacity-0 cursor-pointer h-0 w-0" type="radio" name="rate"
+                                    id="rate-2" value="2">
+                                <label
+                                    class="flex justify-center items-center w-full h-full rounded-full hover:text-white hover:bg-orange focus:text-white focus-within:bg-orange"
+                                    for="rate-2">2</label>
+                            </div>
+                            <div
+                                class="flex justify-center items-center rounded-full w-12 h-12 bg-gray-700 text-mediumGrey font-medium">
+                                <input class="absolute opacity-0 cursor-pointer h-0 w-0" type="radio" name="rate"
+                                    id="rate-3" value="3">
+                                <label
+                                    class="flex justify-center items-center w-full h-full rounded-full hover:text-white hover:bg-orange focus:text-white focus-within:bg-orange"
+                                    for="rate-3">3</label>
+                            </div>
+                            <div
+                                class="flex justify-center items-center rounded-full w-12 h-12 bg-gray-700 text-mediumGrey font-medium">
+                                <input class="absolute opacity-0 cursor-pointer h-0 w-0" type="radio" name="rate"
+                                    id="rate-4" value="4">
+                                <label
+                                    class="flex justify-center items-center w-full h-full rounded-full hover:text-white hover:bg-orange focus:text-white focus-within:bg-orange"
+                                    for="rate-4">4</label>
+                            </div>
+                            <div
+                                class="flex justify-center items-center rounded-full w-12 h-12 bg-gray-700 text-mediumGrey font-medium">
+                                <input class="absolute opacity-0 cursor-pointer h-0 w-0" type="radio" name="rate"
+                                    id="rate-5" value="5">
+                                <label
+                                    class="flex justify-center items-center w-full h-full rounded-full hover:text-white hover:bg-orange focus:text-white focus-within:bg-orange"
+                                    for="rate-5">5</label>
+                            </div>
+                        </div>
+                        <button type="submit"
+                            class="px-6 py-2 font-bold text-white rounded-full uppercase bg-orange focus:outline-none hover:text-orange hover:bg-white focus:text-orange focus:bg-white">Submit</button>
+                    </form>
                 </div>
-                <h3 class="font-bold text-white text-3xl mb-6">How did we do?</h3>
-                <p class="font-normal text-mediumGrey text-l mb-6">
-                    Please let us know how we did with your support request. All feedback is appreciated to help us
-                    improve our offering!
-                </p>
-                <div class="flex items-center justify-center mb-6 space-x-4">
-                    <div class="relative rounded-full w-12 h-12 bg-gray-700 p-4 text-mediumGrey font-medium">
-                        <input class="absolute opacity-0 cursor-pointer h-0 w-0 checked:bg-mediumGrey" type="radio"
-                            name="rate" id="rate-1">
-                        <label class="absolute top-0 left-0 text-center w-12 h-12 rounded-full before:content-['1'] hover:text-white
-                            hover:bg-orange" for="rate-1"></label>
-                    </div>
-                    <div>
-                        <input type="radio" name="rate" id="rate-2">
-                        1
-                    </div>
-                    <div>
-                        <input type="radio" name="rate" id="">
-                        2
-                    </div>
-                    <div>
-                        <input type="radio" name="rate" id="">
-                        3
-                    </div>
-                    <div>
-                        <input type="radio" name="rate" id="">
-                        4
-                    </div>
-                    <div>
-                        <input type="radio" name="rate" id="">
-                        5
-                    </div>
-                </div>
-                <button type="button"
-                    class="px-6 py-2 font-bold text-white rounded-full uppercase bg-orange focus:outline-none hover:text-orange hover:bg-white focus:text-orange focus:bg-white">Submit</button>
-            </form>
-        </div>
+            </div>
     </body>
 
 </html>
