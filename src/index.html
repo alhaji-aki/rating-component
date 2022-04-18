@@ -12,6 +12,7 @@
     </head>
 
     <body class="bg-veryDarkBlue">
+        <div class="flex justify-center items-center h-screen w-screen">
             <div class="rounded-3xl w-96 h-auto p-8 bg-gradient-to-bl from-gray-700 via-gray-800 to-gray-900">
                 <div id="rating-component">
                     <form id="rating-form" class="flex flex-col">
@@ -70,7 +71,22 @@
                             class="px-6 py-2 font-bold text-white rounded-full uppercase bg-orange focus:outline-none hover:text-orange hover:bg-white focus:text-orange focus:bg-white">Submit</button>
                     </form>
                 </div>
+                <div id="thank-you-component" class="hidden">
+                    <div class="flex flex-col items-center space-y-6">
+                        <img src="./images/illustration-thank-you.svg" alt="" class="w-48 h-32">
+                        <div class="rounded-full text-center bg-gray-700 py-2 text-orange px-4 mb-8">
+                            You selected <span id="rating-value"></span> out of 5
+                        </div>
+                        <h3 class="font-bold text-white text-3xl">Thank you!</h3>
+                        <p class="font-normal text-mediumGrey text-l">
+                            We appreciate you taking the time to give a rating. If you ever need more support, don’t
+                            hesitate to
+                            get in touch!
+                        </p>
+                    </div>
+                </div>
             </div>
+        </div>
     </body>
 
 </html>
